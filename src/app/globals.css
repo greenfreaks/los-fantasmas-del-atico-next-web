@@ -20,50 +20,44 @@
 }
 
 :root {
-  --main: #ED8413;
-  --hover-main: #D2620D;
-  --active-main: #AE430F;
+  --main: #900A05;
+  --secondary: #DA8A02;
+  --hover-secondary: #D2620D;
+  --active-secondary: #AE430F;
   --white: #F8F8F8;
+  --light-white: #F1E0C5;
+  --black : #000000;
   --disabled: #FCECC9;
-  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+  --inter: "Inter", sans-serif;
 }
 
 body {
-  background: var(--white);
-  font-family: var(--font-plus-jakarta);
+  font-family: var(--inter);
+  background: var(--black);
+  color : var(--white);
+  font-size: 19.2px;
 }
 
 @theme inline {
-  --font-display: "Montserrat", sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-lobster: var(--font-lobster);
+  --font-oswald: var(--font-oswald);
   --color-main: var(--main);
-  --color-hover-main: var(--hover-main);
-  --color-active-main: var(--active-main);
+  --color-secondary: var(--secondary);
+  --color-hover-secondary: var(--hover-secondary);
+  --color-active-secondary: var(--active-secondary);
   --color-background: var(--background);
   --color-disabled: var(--disabled);
   --color-white: var(--white);
+  --color-light-white: var(--light-white);
 }
 
 @theme {
-  --text-super-title: 47.78px;
+  --text-super-title: 64px;
+  --text-title-1: 47.78px;
   --text-title-2: 39.81px;
   --text-title-3: 33.18px;
   --text-title-4: 27.65px;
   --text-title-5: 23.04px;
-  --text-title-6: 19.2px;
-  --text-p: 16px;
-  --small: 13.33px;
-}
-
-@keyframes spinOnce {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.animate-spin-once {
-  animation: spinOnce 0.7s ease-in-out;
+  --text-letter-small: 16px;
 }
