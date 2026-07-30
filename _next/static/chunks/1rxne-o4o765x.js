@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,58298,r=>{"use strict";var c=r.i(46400);r.s(["default",0,function(){return(0,c.jsx)("h1",{children:"Ocurrió un error al cargar los recursos"})}])}]);

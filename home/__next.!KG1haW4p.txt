@@ -1,0 +1,4 @@
+1:"$Sreact.fragment"
+2:I[5433,["/los-fantasmas-del-atico-next-web/_next/static/chunks/2oy-w66khlofk.js","/los-fantasmas-del-atico-next-web/_next/static/chunks/3jnc7-m5999q7.js"],"default"]
+3:I[72328,["/los-fantasmas-del-atico-next-web/_next/static/chunks/2oy-w66khlofk.js","/los-fantasmas-del-atico-next-web/_next/static/chunks/3jnc7-m5999q7.js"],"default"]
+0:{"rsc":["$","$1","c",{"children":[null,["$","div",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}],"notFound":[["$","h1",null,{"children":"Lo sentimos, no pudimos encontrar la banda solicitada"}],[]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"SITs9eDQBChWUbbqs4kvG"}
