@@ -1,7 +1,9 @@
+"use client";
+
 import banner from "@/src/assets/banner.webp";
 import { SideSocial } from "./sideSocial";
-import { Label } from "./Label";
 import { Button } from "./Button";
+import { whatsappMessage } from "../utils/whatsapp-message";
 
 export const Banner = () => {
   return (
@@ -27,14 +29,17 @@ export const Banner = () => {
 
         {/* Descripción */}
         <p className="text-sm font-medium sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-prose">
-          Una banda que desata la fuerza del Rock & Roll, Rockabilly y Blues con un estilo propio y una actitud explosiva. Cada show es una descarga de energía, guitarras encendidas y ritmo contagioso que transforma cualquier escenario en una verdadera fiesta.
+          Una banda que desata la fuerza del Rock & Roll, el Rockabilly y el Blues con un estilo propio y una actitud explosiva. Cada show es una descarga de energía y ritmo contagioso que transforma cualquier escenario en una verdadera fiesta.
         </p>
 
         {/* Botón de Acción */}
-        <Button
-          className="bg-secondary hover:bg-hover-secondary active:bg-active-secondary text-black w-9/12 sm:w-1/2 sm:px-8 mt-8 h-14 font-semibold transition-all"
-          text="CONTACTAR BANDA"
-        />
+
+          <Button
+            className="bg-secondary hover:bg-hover-secondary active:bg-active-secondary text-black w-9/12 sm:w-1/2 sm:px-8 mt-8 h-14 font-semibold transition-all"
+            text="CONTACTAR BANDA"
+            onClick={() => window.open(whatsappMessage(), "_blank")}
+          />
+       
       </div>
     </div>
   );

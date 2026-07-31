@@ -16,17 +16,12 @@ const REVIEW_LIST: Review[] = [
     review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
     author: "Maribel R.",
   },
-  {
-    review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
-    author: "Maribel R.",
-  },
-  {
-    review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
-    author: "Maribel R.",
-  },
 ];
 
 export const Reviews = () => {
+  if (REVIEW_LIST.length === 0){
+    return null;
+  }
   return (
     <div>
       <SectionTitle title="RESEÑAS" />
