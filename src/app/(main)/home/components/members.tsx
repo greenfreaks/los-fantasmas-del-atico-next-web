@@ -52,7 +52,7 @@ export const Members = () => {
   return (
     <div>
       <SectionTitle title="LOS FANTASMAS" />
-      <div className="flex flex-col md:flex-row sm:gap-x-6 sm:justify-center">
+      <div className="flex flex-col md:flex-row gap-y-4 sm:gap-x-6 sm:justify-center">
         {MEMBERS_LIST.map((member, index) => (
           <div
             className="mb-6] sm:max-w-1/4 sm:max-w-1/4 border-2 border-main p-3.5 rounded-md h-[600px] sm:min-h-[550px] sm:h-[550px] "
