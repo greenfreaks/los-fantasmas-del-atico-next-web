@@ -1,4 +1,3 @@
-import { title } from "process";
 import { SectionTitle } from "./section-title";
 
 const VIDEO_LIST = [
@@ -22,9 +21,11 @@ export const Videos = () => {
       <div className="">
         <video
           className="w-full border-10 border-light-white rounded-md"
-          src="/videos/bule-bule.mp4"
           controls
-        ></video>
+        >
+          <source src="/videos/bule-bule.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video HTML5.
+        </video>
         <h4 className="text-title-4 sm:text-super-title text-light-white text-center font-oswald mt-4 uppercase">
           BULE BULE | PLAZA COMERCIAL LA ALAMEDA. TIZAYUCA, HIDALGO
         </h4>
