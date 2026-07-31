@@ -19,13 +19,12 @@ export const Videos = () => {
     <div className="">
       <SectionTitle title="NUESTRO SHOW" />
       <div className="">
-        <video
-          className="w-full border-10 border-light-white rounded-md"
-          controls
-        >
-          <source src="/videos/bule-bule.mp4" type="video/mp4" />
-          Tu navegador no soporta la reproducción de video HTML5.
-        </video>
+        <iframe
+          className="w-full h-auto aspect-video border-10 border-light-white rounded-md"
+          src="https://www.youtube.com/embed/D_b8oEci-6Y?si=p3Y1YiAR1TDbXg-n"
+          title="Bule bule | Plaza Comercial La Alameda. Tizayuca, Hidalgo"
+          allow="accelerometer; clipboard-write; encrypted-media"
+        ></iframe>
         <h4 className="text-title-4 sm:text-super-title text-light-white text-center font-oswald mt-4 uppercase">
           BULE BULE | PLAZA COMERCIAL LA ALAMEDA. TIZAYUCA, HIDALGO
         </h4>
