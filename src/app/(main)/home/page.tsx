@@ -1,7 +1,15 @@
+import { Banner } from "./components/Banner";
+import { Header } from "./components/Header";
+import { InfoBand } from "./components/infoBand";
+import { Footer } from "./components/footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold mb-4">Home</h1>
+    <div className="">
+      <Header />
+      <Banner />
+      <InfoBand />
+      <Footer />
     </div>
   );
 }

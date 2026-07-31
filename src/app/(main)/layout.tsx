@@ -6,7 +6,7 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      Hola
+      {children}
     </div>
   );
 }
