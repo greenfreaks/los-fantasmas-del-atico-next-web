@@ -14,6 +14,7 @@ const VIDEO_LIST = [
     title: "SUENA MI ESQUELETO",
   },
 ];
+
 export const Videos = () => {
   return (
     <div className="">
@@ -23,7 +24,8 @@ export const Videos = () => {
           className="w-full h-auto aspect-video border-10 border-light-white rounded-md"
           src="https://www.youtube.com/embed/D_b8oEci-6Y?si=p3Y1YiAR1TDbXg-n"
           title="Bule bule | Plaza Comercial La Alameda. Tizayuca, Hidalgo"
-          allow="accelerometer; clipboard-write; encrypted-media"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowFullScreen
         ></iframe>
         <h4 className="text-title-4 sm:text-super-title text-light-white text-center font-oswald mt-4 uppercase">
           BULE BULE | PLAZA COMERCIAL LA ALAMEDA. TIZAYUCA, HIDALGO
@@ -39,7 +41,8 @@ export const Videos = () => {
               className="w-full h-auto aspect-video bg-black border-2 border-main p-4 rounded-md"
               src={video.src}
               title={video.title}
-              allow="accelerometer; clipboard-write; encrypted-media"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowFullScreen
             ></iframe>
             <h4 className="sm:mt-4 sm:text-title-3 text-center font-oswald uppercase">
               {video.title}
