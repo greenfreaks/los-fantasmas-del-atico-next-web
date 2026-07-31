@@ -44,8 +44,8 @@ export const Reviews = () => {
               <Image src={Star.src} alt="Star" width={30} height={30} />
             </div>
             <div className="text-center font-oswald mt-4">
-              <p className="text-title-2" dangerouslySetInnerHTML={{ __html: review.review }}></p>
-              <p className="text-title-3 mt-4">{review.author}</p>
+              <p className="text-title-5 sm:text-title-2" dangerouslySetInnerHTML={{ __html: review.review }}></p>
+              <p className="sm:text-title-3 mt-4">{review.author}</p>
             </div>
           </div>
         ))}

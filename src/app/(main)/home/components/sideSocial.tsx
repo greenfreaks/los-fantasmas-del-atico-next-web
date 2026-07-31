@@ -5,7 +5,7 @@ import whatsapp from "@/src/assets/icons/whatsapp.webp"
 
 export const SideSocial = () => {
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex gap-x-4 sm:flex-col sm:gap-y-4">
       <Image src={facebook} alt="Facebook" width={30} height={30} />
       <Image src={instagram} alt="Instagram" width={30} height={30} />
       <Image src={whatsapp} alt="Instagram" width={30} height={30} />
