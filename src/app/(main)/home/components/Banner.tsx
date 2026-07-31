@@ -27,7 +27,7 @@ export const Banner = () => {
 
         {/* Descripción */}
         <p className="text-sm font-medium sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-prose">
-          Una banda que desata la fuerza del rock & roll, rockabilly y surf con un estilo propio y una actitud explosiva. Cada show es una descarga de energía, guitarras encendidas y ritmo contagioso que transforma cualquier escenario en una verdadera fiesta.
+          Una banda que desata la fuerza del Rock & Roll, Rockabilly y Blues con un estilo propio y una actitud explosiva. Cada show es una descarga de energía, guitarras encendidas y ritmo contagioso que transforma cualquier escenario en una verdadera fiesta.
         </p>
 
         {/* Botón de Acción */}
