@@ -2,7 +2,7 @@ import Image from "next/image";
 import bgRed from "@/src/assets/reg-bg.webp";
 import mario from "@/src/assets/mario.webp";
 import pablo from "@/src/assets/pablo.webp";
-import lalo from "@/src/assets/lalo.webp";
+import jordi from "@/src/assets/jordi.webp";
 import omar from "@/src/assets/omar.webp";
 import { SectionTitle } from "./section-title";
 
@@ -23,19 +23,11 @@ const MEMBERS_LIST: Member[] = [
   },
   {
     name: "Pablo",
-    role: "GUITARRISTA",
+    role: "BATERISTA",
     description: `El si es bajista en un grupo de cumbias. <br />
       Viene de una familia de músicos <br />
       Sus géneros favoritos son La Cumbia, los boleros y el Rock`,
     image: pablo.src,
-  },
-  {
-    name: "Lalo",
-    role: "BATERISTA",
-    description:
-      `Es de rancho.<br />
-      El género que más le gusta escuchar y tocar es el Rock N Roll, su vida musical se basa principalmente en ese género.<br />`,
-    image: lalo.src,
   },
   {
     name: "Omar",
@@ -45,6 +37,15 @@ const MEMBERS_LIST: Member[] = [
       Toca con Pablo en el mismo grupo de Cumbias.
       Sus géneros favoritos son la Salsa y la Cumbia.`,
     image: omar.src,
+  },
+    {
+    name: "Jordi",
+    role: "GUITARRISTA",
+    description:
+      `Es metalero, muy metalero.<br />
+      Es "El chavo que toca la guitarra en la calle."<br />
+      Se le puede ver tocando en los centros de las ciudades.`,
+    image: jordi.src,
   },
 ];
 
