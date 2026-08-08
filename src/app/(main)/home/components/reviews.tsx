@@ -9,24 +9,19 @@ interface Review {
 
 const REVIEW_LIST: Review[] = [
   {
-    review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
+    review: `Si quieren bailar y divertirse, Los Fantasmas son la opción.`,
     author: "Maribel R.",
   },
   {
-    review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
-    author: "Maribel R.",
-  },
-  {
-    review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
-    author: "Maribel R.",
-  },
-  {
-    review: `¡No puedo esperar a verlos de nuevo! <br /> ¡Fans de por vida!`,
-    author: "Maribel R.",
+    review: `Son mi pinche banda favorita.`,
+    author: "Itzel S.",
   },
 ];
 
 export const Reviews = () => {
+  if (REVIEW_LIST.length === 0){
+    return null;
+  }
   return (
     <div>
       <SectionTitle title="RESEÑAS" />

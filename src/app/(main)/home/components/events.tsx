@@ -1,33 +1,36 @@
+"use client";
+
 import Image from "next/image";
 import Location from "@/src/assets/location.webp";
 import { SectionTitle } from "./section-title";
+import { Button } from "./Button";
 
 interface Event {
   name: string;
   date: Date;
-  place: string;
+  place?: string;
   state: string;
-  location: string;
+  costo?: string;
+  publicEvent?: boolean;
+  location?: string;
 }
 
 const EVENT_LIST: Event[] = [
-  {
-    name: "ROCK N ROLL PARA CUMPLEAÑOS",
-    date: new Date("2026-07-31T22:00:00"),
-    place: "Evento Privado",
-    state: "Tizayuca",
-    location: "https://goo.gl/maps/6Z1g5k1k1k1k1k1k1",
-  },
   {
     name: "ROCK N ROLL PARA TIZAYUCA",
     date: new Date("2026-08-09T16:00:00"),
     place: "Alameda Comercial",
     state: "Tizayuca, Hgo",
-    location: "https://goo.gl/maps/6Z1g5k1k1k1k1k1k1",
+    publicEvent: true,
+    location: "https://maps.app.goo.gl/Qt5bkHXbGpWkhuup9",
+    costo: "Entrada libre",
   },
 ];
 
 export const Events = () => {
+  if (EVENT_LIST.length === 0) {
+    return null;
+  }
   return (
     <div className="w-full">
       <SectionTitle title="PRÓXIMOS EVENTOS" />
@@ -70,19 +73,26 @@ export const Events = () => {
                   <p className="text-secondary font-semibold">{time} HRS</p>
                 </div>
 
-                <div className="flex items-start gap-x-3 mt-3">
-                  <Image
-                    src={Location.src}
-                    alt="Location icon"
-                    width={22}
-                    height={22}
-                    className="shrink-0"
-                  />
-                  <div>
-                    <p className="font-semibold">{event.place}</p>
-                    <p>{event.state}.</p>
+                {!event.publicEvent && <p>Evento Privado</p>}
+
+                {event.publicEvent && (
+                  <div className="flex items-start gap-x-3 mt-3">
+                    <Image
+                      src={Location.src}
+                      alt="Location icon"
+                      width={22}
+                      height={22}
+                      className="shrink-0"
+                    />
+                    <div>
+                      <p className="font-semibold">{event.place}</p>
+                      <p>{event.state}.</p>
+                    </div>
                   </div>
-                </div>
+                )}
+                {event.costo && <p className="mt-4"><b>Costo:</b> {event.costo}</p>}
+                {event.location && <Button className="mt-4 sm:w-1/2 bg-secondary text-black" text="¿Cómo llegar?" onClick={() => window.open(event.location, "_blank")}/>}
+
               </div>
             </div>
           );

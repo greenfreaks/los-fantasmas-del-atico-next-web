@@ -2,7 +2,7 @@ import Image from "next/image";
 import bgRed from "@/src/assets/reg-bg.webp";
 import mario from "@/src/assets/mario.webp";
 import pablo from "@/src/assets/pablo.webp";
-import lalo from "@/src/assets/lalo.webp";
+import jordi from "@/src/assets/jordi.webp";
 import omar from "@/src/assets/omar.webp";
 import { SectionTitle } from "./section-title";
 
@@ -17,30 +17,35 @@ const MEMBERS_LIST: Member[] = [
   {
     name: "Mario",
     role: "VOCALISTA / BAJISTA",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odit accusamus est praesentium, culpa veniam dicta exercitationem tempora quaerat assumen",
+    description: `Es bajista por necesidad mas que nada. <br /> Una de las cosas que mas le gustaría es ser bajista en un grupo de cumbias. <br />
+      Sus géneros favoritos son el Rockabilly y el Punk Rock.`,
     image: mario.src,
   },
   {
     name: "Pablo",
-    role: "GUITARRISTA",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odit accusamus est praesentium, culpa veniam dicta exercitationem tempora quaerat assumen",
-    image: pablo.src,
-  },
-  {
-    name: "Lalo",
     role: "BATERISTA",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odit accusamus est praesentium, culpa veniam dicta exercitationem tempora quaerat assumen",
-    image: lalo.src,
+    description: `El si es bajista en un grupo de cumbias. <br />
+      Viene de una familia de músicos <br />
+      Sus géneros favoritos son La Cumbia, los boleros y el Rock`,
+    image: pablo.src,
   },
   {
     name: "Omar",
     role: "TECLADISTA",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odit accusamus est praesentium, culpa veniam dicta exercitationem tempora quaerat assumen",
+      `Es bien versatil, le sabe a la teoría musical y a la improvisación en su instrumento.
+      Toca con Pablo en el mismo grupo de Cumbias.
+      Sus géneros favoritos son la Salsa y la Cumbia.`,
     image: omar.src,
+  },
+    {
+    name: "Jordi",
+    role: "GUITARRISTA",
+    description:
+      `Es metalero, muy metalero.<br />
+      Es "El chavo que toca la guitarra en la calle."<br />
+      Se le puede ver tocando en los centros de las ciudades.`,
+    image: jordi.src,
   },
 ];
 
@@ -48,10 +53,10 @@ export const Members = () => {
   return (
     <div>
       <SectionTitle title="LOS FANTASMAS" />
-      <div className="flex flex-col md:flex-row sm:gap-y-8 sm:justify-center">
+      <div className="flex flex-col md:flex-row gap-y-4 sm:gap-x-6 sm:justify-center">
         {MEMBERS_LIST.map((member, index) => (
           <div
-            className="mb-6 sm:max-w-1/4 border-2 border-main p-3.5 rounded-md h-[600px] sm:h-[550px] "
+            className="mb-6] sm:max-w-1/4 sm:max-w-1/4 border-2 border-main p-3.5 rounded-md h-[600px] sm:min-h-[550px] sm:h-[550px] "
             key={index}
           >
             <div
@@ -75,7 +80,10 @@ export const Members = () => {
               <p className="font-bold text-light-white text-letter-small">
                 {member.role}
               </p>
-              <p className="mt-2.5">{member.description}</p>
+              <p
+                className="mt-2.5 max-w-full "
+                dangerouslySetInnerHTML={{ __html: member.description }}
+              ></p>
             </div>
           </div>
         ))}
