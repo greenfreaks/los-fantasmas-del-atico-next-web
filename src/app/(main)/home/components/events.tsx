@@ -17,12 +17,6 @@ interface Event {
 
 const EVENT_LIST: Event[] = [
   {
-    name: "ROCK N ROLL PARA CUMPLEAÑOS",
-    date: new Date("2026-07-31T22:00:00"),
-    state: "Tizayuca",
-    publicEvent: false,
-  },
-  {
     name: "ROCK N ROLL PARA TIZAYUCA",
     date: new Date("2026-08-09T16:00:00"),
     place: "Alameda Comercial",

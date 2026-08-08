@@ -4,6 +4,7 @@ import facebook from "@/src/assets/icons/facebook.webp"
 import instagram from "@/src/assets/icons/instagram.webp"
 import whatsapp from "@/src/assets/icons/whatsapp.webp"
 import youtube from "@/src/assets/icons/youtube.webp"
+import tiktok from "@/src/assets/icons/tiktok.webp"
 
 interface SideSocialProps{
   icon: string
@@ -11,20 +12,24 @@ interface SideSocialProps{
 }
 const SOCIAL_LIST: SideSocialProps[] = [
   {
-    icon: facebook.src,
-    url: "https://www.facebook.com/losfantasmasdelatico",
-  },
-  {
-    icon: instagram.src,
-    url: "https://www.instagram.com/los_fantasmas_del_atico?igsh=MXRzdTU4MHhybmhhcQ==",
-  },
-  {
     icon: whatsapp.src,
     url: whatsappMessage(),
   },
   {
+    icon: facebook.src,
+    url: "https://www.facebook.com/losfantasmasdelatico",
+  },
+  {
     icon: youtube.src,
     url: "https://www.youtube.com/@LosFantasmasdel%C3%81tico",
+  },
+  {
+    icon: instagram.src,
+    url: "https://www.instagram.com/losfantasmasdelatico?igsh=MXA4MGF0Ym9wbjl2cQ==",
+  },
+  {
+    icon: tiktok.src,
+    url: "https://www.tiktok.com/@losfantasmasdelatico?_r=1&_t=ZS-98hWTgzra5d",
   }
 ];
 
