@@ -25,6 +25,15 @@ const EVENT_LIST: Event[] = [
     location: "https://maps.app.goo.gl/Qt5bkHXbGpWkhuup9",
     costo: "Entrada libre",
   },
+  {
+    name: "ROCKABILLY GLÜK CANTABAR",
+    date: new Date("2026-08-15T22:00:00"),
+    place: "Glük Cantabar",
+    state: "Tizayuca, Hgo",
+    publicEvent: true,
+    location: "https://maps.app.goo.gl/T3oVvvGmNcWpXvLQ8",
+    costo: "Entrada libre",
+  },
 ];
 
 export const Events = () => {
@@ -91,7 +100,7 @@ export const Events = () => {
                   </div>
                 )}
                 {event.costo && <p className="mt-4"><b>Costo:</b> {event.costo}</p>}
-                {event.location && <Button className="mt-4 sm:w-1/2 bg-secondary text-black" text="¿Cómo llegar?" onClick={() => window.open(event.location, "_blank")}/>}
+                {event.location && <Button className="mt-4 sm:w-1/2 bg-secondary text-black" text="¿CÓMO LLEGAR?" onClick={() => window.open(event.location, "_blank")}/>}
 
               </div>
             </div>
