@@ -16,24 +16,15 @@ interface Event {
 }
 
 const EVENT_LIST: Event[] = [
-  {
-    name: "ROCK N ROLL PARA TIZAYUCA",
-    date: new Date("2026-08-09T16:00:00"),
-    place: "Alameda Comercial",
-    state: "Tizayuca, Hgo",
-    publicEvent: true,
-    location: "https://maps.app.goo.gl/Qt5bkHXbGpWkhuup9",
-    costo: "Entrada libre",
-  },
-  {
-    name: "ROCKABILLY GLÜK CANTABAR",
-    date: new Date("2026-08-15T22:00:00"),
-    place: "Glük Cantabar",
-    state: "Tizayuca, Hgo",
-    publicEvent: true,
-    location: "https://maps.app.goo.gl/T3oVvvGmNcWpXvLQ8",
-    costo: "Entrada libre",
-  },
+  // {
+  //   name: "ROCK N ROLL PARA TIZAYUCA",
+  //   date: new Date("2026-08-09T16:00:00"),
+  //   place: "Alameda Comercial",
+  //   state: "Tizayuca, Hgo",
+  //   publicEvent: true,
+  //   location: "https://maps.app.goo.gl/Qt5bkHXbGpWkhuup9",
+  //   costo: "Entrada libre",
+  // },
 ];
 
 export const Events = () => {
