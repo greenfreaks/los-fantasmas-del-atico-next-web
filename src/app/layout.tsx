@@ -37,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/fantasmas.ico" />
+      </head>
       <body
         className={`${inter.variable} ${lobster.variable} ${oswald.variable}`}
         suppressHydrationWarning
